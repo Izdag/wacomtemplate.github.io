@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/10fd220c3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <nav class="header-menu">
+                <div class="header-menu-logo">
+                    <svg width="63" height="55" viewBox="0 0 63 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M36.7508 10.6928H26.2492L31.495 19.8594L36.7508 10.6928ZM24.9402 11.4608L19.6844 20.6275H30.186L24.9402 11.4608ZM43.3156 20.6275L38.0598 11.4608L32.814 20.6275H43.3156ZM32.814 22.1536L38.0598 31.3203L43.3156 22.1536H32.814ZM19.6844 22.1536L24.9402 31.3203L30.186 22.1536H19.6844ZM13.1196 32.0783H23.6213L18.3754 22.9217L13.1196 32.0783ZM49.8704 32.0783L44.6246 22.9217L39.3787 32.0783H49.8704ZM31.495 0L26.2492 9.16667H36.7508L31.495 0ZM44.6246 42.7711L49.8704 33.6144H39.3787L44.6246 42.7711ZM18.3754 42.7711L23.6213 33.6144H13.1196L18.3754 42.7711ZM6.56479 43.5392H17.0565L11.8106 34.3725L6.56479 43.5392ZM56.4352 43.5392L51.1894 34.3725L45.9335 43.5392H56.4352ZM45.9335 45.0653L51.1894 54.232L56.4352 45.0653H45.9335ZM32.814 45.0653L38.0598 54.232L43.3156 45.0653H32.814ZM11.8106 54.232L17.0565 45.0653H6.56479L11.8106 54.232ZM0 55H10.5017L5.24584 45.8333L0 55ZM26.2492 55H36.7508L31.495 45.8333L26.2492 55ZM39.3787 55H49.8704L44.6246 45.8333L39.3787 55ZM57.7542 45.8333L52.4983 55H63L57.7542 45.8333Z"
+                            fill="white" />
+                    </svg>
+                    <div class="header-logo">Waxom</div>
+                </div>
+                <div class="header-menu-link">
+                    <ul class="menu-list">
+                        <li class="menu-list-item"><a class="menu-list-item-link" href="">Home</a></li>
+                        <li class="menu-list-item"><a class="menu-list-item-link" href="">About us</a></li>
+                        <li class="menu-list-item"><a class="menu-list-item-link" href="">Portfolio</a></li>
+                        <li class="menu-list-item"><a class="menu-list-item-link" href="">Features</a></li>
+                        <li class="menu-list-item"><a class="menu-list-item-link" href="">Blog</a></li>
+                        <li class="menu-list-item"><a class="menu-list-item-link" href="">Pricing</a></li>
+                        <li class="menu-list-item"><a class="menu-list-item-link" href="">Shortcodes</a></li>
+                        <li class="menu-list-item"><a class="menu-list-item-link" href="">Contact</a></li>
+                    </ul>
+                    <div class="header-icon">
+                        <a href="#" class="header-icon-cart">
+                            <svg width="18" height="24" viewBox="0 0 18 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15 3H13.5C13.5 1.34 11.48 0 9 0C6.51 0 4.5 1.34 4.5 3H3C1.35 3 0 4.34 0 6V21C0 22.65 1.35 23.99 3 23.99H15C16.65 23.99 17.99 22.65 17.99 21V6C17.99 4.34 16.65 3 15 3ZM9 1.5C10.66 1.5 12 1.96 12 3H6C6 1.96 7.34 1.5 9 1.5ZM16.49 21C16.49 21.82 15.82 22.49 15 22.49H3C2.17 22.49 1.5 21.82 1.5 21V19.5H16.49V21ZM16.49 18H1.5V6C1.5 5.17 2.17 4.5 3 4.5H4.5V9H6V4.5H12V9H13.5V4.5H15C15.82 4.5 16.49 5.17 16.49 6V18Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a href="#" class="header-icon-search">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.76 22.68L17.57 16.59C19.19 14.82 20.19 12.49 20.19 9.93C20.19 4.44 15.67 0 10.09 0C4.52 0 0 4.44 0 9.93C0 15.42 4.52 19.86 10.09 19.86C12.5 19.86 14.71 19.03 16.45 17.64L22.66 23.76C22.97 24.06 23.46 24.06 23.76 23.76C24.06 23.46 24.06 22.98 23.76 22.68ZM10.09 18.33C5.38 18.33 1.55 14.57 1.55 9.93C1.55 5.29 5.38 1.52 10.09 1.52C14.81 1.52 18.63 5.29 18.63 9.93C18.63 14.57 14.81 18.33 10.09 18.33Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-menu-mobile"><i class="fas fa-bars"></i></div>
+            </nav>
+            <div class="header-slider">
+                <div class="header-design">
+                    <div class="header-unique raleway-medium">Unique and Modern Design</div>
+                    <h2 class="header-title raleway-semi-bold">Portfolio PSD Template</h2>
+                    <p class="header-text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
+                        doming id quod mazim placerat facer possim assum.</p>
+                </div>
+                <a href="" class="header-btn">GET STARTED</a>
+
+                <svg width="40" height="73" class="header-arrows-right" viewBox="0 0 40 73"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.97 72.96L40 36.48L1.97 0L0 2L35.93 36.48L0 70.96L1.97 72.96Z" />
+                </svg>
+
+                <svg width="40" height="73" class="header-arrows-left" viewBox="0 0 40 73"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M38.03 72.98L0 36.5L38.03 0.0200195L40 2.02002L4.07 36.5L40 70.98L38.03 72.98Z" />
+                </svg>
+
+
+                <ul class="header-list">
+                    <li class="header-item"></li>
+                    <li class="header-item"></li>
+                    <li class="header-item"></li>
+                    <li class="header-item"></li>
+                    <li class="header-item"></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+
+    <main>
+        <section class="services">
+            <div class="wrap">
+                <ul class="services-list">
+                    <li class="services-item">
+                        <svg width="48" height="48" class="services-item-icon" viewBox="0 0 48 48"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M46.6971 17.1135C46.08 16.5061 45.1004 16.5061 44.4931 17.1135L30.9257 30.671L11.8629 39.0759L8.92408 36.1371L17.3192 17.0645L30.8865 3.50694C31.4939 2.8898 31.4939 1.91021 30.8865 1.30286C30.2694 0.695514 29.2898 0.695514 28.6824 1.30286L14.7037 15.2718L0.519184 47.471L32.7184 33.2963L46.6971 19.3176C47.3045 18.7102 47.3045 17.7208 46.6971 17.1135ZM26.9388 27.889C27.2424 28.1829 27.6343 28.3396 28.0359 28.3396C28.4375 28.3396 28.8294 28.1829 29.1429 27.889L42.2008 14.8212C42.8082 14.2139 42.8082 13.2343 42.2008 12.6171C41.5837 12.0098 40.6041 12.0098 39.9967 12.6171L26.9388 25.6849C26.3314 26.2922 26.3314 27.2718 26.9388 27.889ZM23.5298 24.48C23.8335 24.7739 24.2253 24.9306 24.6269 24.9306C25.0286 24.9306 25.4204 24.7739 25.7241 24.48L38.7918 11.4122C39.3992 10.8049 39.3992 9.81551 38.7918 9.20817C38.1747 8.60082 37.1951 8.60082 36.5877 9.20817L23.5298 22.2661C22.9127 22.8735 22.9127 23.8629 23.5298 24.48ZM20.111 21.0612C20.4147 21.3649 20.8163 21.5216 21.218 21.5216C21.6196 21.5216 22.0114 21.3649 22.3151 21.0612L35.3829 8.00327C35.9902 7.39592 35.9902 6.40653 35.3829 5.79919C34.7755 5.19184 33.7861 5.19184 33.1788 5.79919L20.111 18.8571C19.5037 19.4645 19.5037 20.4539 20.111 21.0612Z" />
+                        </svg>
+                        <h3 class="services-title raleway-semi-bold">Web & App Design</h3>
+                        <p class="services-text">Nam liber tempor cum soluta nobis eleifend option congue nihil
+                            imperdiet
+                            doming id quod mazim.</p>
+                    </li>
+                    <li class="services-item services-item-padding">
+                        <svg width="44" height="40" class="services-item-icon" viewBox="0 0 44 40"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21.85 0.109985L0.410004 11.67L21.85 23.23L43.29 11.67L21.85 0.109985ZM21.85 26.96L4.4 17.55L0.410004 19.7L21.85 31.25L43.29 19.7L39.3 17.55L21.85 26.96ZM21.85 34.98L4.4 25.57L0.410004 27.72L21.85 39.28L43.29 27.72L39.3 25.57L21.85 34.98Z" />
+                        </svg>
+                        <h3 class="services-title raleway-semi-bold">Development</h3>
+                        <p class="services-text">Nam liber tempor cum soluta nobis eleifend option congue nihil
+                            imperdiet
+                            doming id quod mazim.</p>
+                    </li>
+                    <li class="services-item services-item-top">
+                        <svg width="44" height="44" class="services-item-icon" viewBox="0 0 44 44"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M43.93 21.85C43.93 20.23 42.76 18.5 41.32 17.99C39.88 17.48 38.49 16.24 38.08 15.25C37.68 14.27 37.78 12.4 38.44 11.02C39.09 9.64001 38.69 7.59001 37.55 6.44001C36.4 5.30001 34.36 4.90001 32.98 5.56001C31.6 6.21001 29.73 6.32001 28.75 5.91001C27.76 5.51001 26.52 4.11001 26.01 2.67001C25.49 1.23001 23.76 0.0700073 22.14 0.0700073C20.52 0.0700073 18.79 1.23001 18.28 2.67001C17.77 4.11001 16.52 5.51001 15.54 5.91001C14.56 6.32001 12.69 6.21001 11.31 5.56001C9.92999 4.90001 7.87998 5.30001 6.73998 6.44001C5.58998 7.59001 5.18999 9.64001 5.84999 11.02C6.50998 12.4 6.60998 14.27 6.19999 15.25C5.79998 16.23 4.40999 17.48 2.96999 17.99C1.52999 18.5 0.359985 20.23 0.359985 21.85C0.359985 23.47 1.52999 25.2 2.96999 25.71C4.40999 26.22 5.79999 27.47 6.20999 28.45C6.60999 29.43 6.50998 31.3 5.84999 32.68C5.18999 34.06 5.58998 36.11 6.73998 37.26C7.87998 38.4 9.92999 38.8 11.31 38.14C12.69 37.49 14.56 37.38 15.54 37.79C16.52 38.2 17.77 39.59 18.28 41.03C18.79 42.47 20.52 43.63 22.14 43.63C23.76 43.63 25.49 42.47 26.01 41.03C26.52 39.59 27.76 38.2 28.74 37.79C29.73 37.38 31.6 37.49 32.98 38.14C34.36 38.8 36.4 38.4 37.55 37.26C38.69 36.11 39.09 34.06 38.44 32.68C37.78 31.3 37.67 29.43 38.08 28.45C38.48 27.47 39.88 26.22 41.32 25.71C42.76 25.2 43.93 23.47 43.93 21.85ZM22.14 29.84C17.72 29.84 14.15 26.27 14.15 21.86C14.15 17.44 17.72 13.87 22.14 13.87C26.55 13.87 30.13 17.44 30.13 21.86C30.13 26.27 26.55 29.84 22.14 29.84Z" />
+                        </svg>
+                        <h3 class="services-title raleway-semi-bold">Customization</h3>
+                        <p class="services-text">Nam liber tempor cum soluta nobis eleifend option congue nihil
+                            imperdiet
+                            doming id quod mazim.</p>
+                    </li>
+                    <li class="services-item services-item-padding">
+                        <svg width="52" height="36" class="services-item-icon" viewBox="0 0 52 36"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.99999 13.25C9.99999 11.19 12.47 9.63999 14.74 9.63999H40.95V7.97999C40.95 6.61999 39.84 5.49999 38.49 5.49999H27.67V4.05999C27.67 1.99999 26.02 0.329987 23.99 0.329987H17.7C16.72 0.329987 15.79 0.719986 15.09 1.42999C14.39 2.12999 14.01 3.05999 14.01 4.05999V5.49999H3.19999C1.83999 5.49999 0.73999 6.61999 0.73999 7.97999V30.15L8.99999 13.25ZM16.47 4.05999C16.47 3.72999 16.6 3.41999 16.83 3.17999C17.06 2.93999 17.37 2.81999 17.7 2.81999H23.99C24.67 2.81999 25.22 3.36999 25.22 4.05999V5.49999H16.47V4.05999ZM41.92 33.76C41.33 34.98 39.73 35.98 38.38 35.98H3.07999C1.72999 35.98 1.10999 34.98 1.70999 33.76L11.2 14.34C11.8 13.12 13.39 12.12 14.74 12.12H50.04C51.39 12.12 52.01 13.12 51.41 14.34L41.92 33.76Z" />
+                        </svg>
+                        <h3 class="services-title raleway-semi-bold">Marketing</h3>
+                        <p class="services-text">Nam liber tempor cum soluta nobis eleifend option congue nihil
+                            imperdiet
+                            doming id quod mazim.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="realization">
+            <div class="wrap">
+                <div class="realization-information-block">
+                    <h3 class="realization-title raleway-semi-bold">Waxom is Realization of your Ideas.</h3>
+                    <p class="realization-text">
+                        Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                    </p>
+                </div>
+                <img src="img/realization_img.jpg" alt="картинка" class="realization-img">
+            </div>
+        </section>
+
+        <section class="purchase">
+            <div class="wrap purchase-wrap">
+                <div class="purchase-information-block">
+                    <h3 class="purchase-title">Waxom Multipurpose WordPress Theme</h3>
+                    <p class="purchase-text">Don't Forget to Rate the Template. Thanks so much!</p>
+                </div>
+                <button class="purchase-btn" type="submit">Purchase Now</button>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="wrap">
+                <div class="projects-information">
+                    <h3 class="projects-title raleway-semi-bold">Our Latest Projects.</h3>
+                    <p class="projects-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt
+                        saepius.
+                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                    </p>
+                    <ul class="projects-navigation">
+                        <li class="projects-navigation-item">All</li>
+                        <li class="projects-navigation-item">Web Design</li>
+                        <li class="projects-navigation-item">Mobile App</li>
+                        <li class="projects-navigation-item">Illustration</li>
+                        <li class="projects-navigation-item">Photography</li>
+                    </ul>
+                </div>
+                <ul class="projects-list">
+                    <li class="projects-item">
+                        <img src="img/projects_img1.jpg" alt="" class="projects-img">
+                        <p class="projects-item-text raleway-medium">Claritas Etiam Processus</p>
+                        <span class="projects-item-caption">Photography, Nature</span>
+                    </li>
+                    <li class="projects-item">
+                        <img src="img/projects_img2.jpg" alt="" class="projects-img">
+                        <p class="projects-item-text raleway-medium">Quam Nutamus Farum</p>
+                        <span class="projects-item-caption">Graphic Design, Mock-Up</span>
+                    </li>
+                    <li class="projects-item">
+                        <img src="img/projects_img3.jpg" alt="" class="projects-img">
+                        <p class="projects-item-text raleway-medium">Quam Nutamus Farum</p>
+                        <span class="projects-item-caption">Graphic Design, Mock-Up</span>
+                    </li>
+                    <li class="projects-item">
+                        <img src="img/projects_img4.jpg" alt="" class="projects-img">
+                        <p class="projects-item-text raleway-regular">Quam Nutamus Farum</p>
+                        <span class="projects-item-caption">Graphic Design, Mock-Up</span>
+                    </li>
+                    <li class="projects-item">
+                        <img src="img/projects_img5.jpg" alt="" class="projects-img">
+                        <p class="projects-item-text raleway-medium">Quam Nutamus Farum</p>
+                        <span class="projects-item-caption">Graphic Design, Mock-Up</span>
+                    </li>
+                    <li class="projects-item">
+                        <img src="img/projects_img6.jpg" alt="" class="projects-img">
+                        <p class="projects-item-text raleway-medium">Quam Nutamus Farum</p>
+                        <span class="projects-item-caption">Graphic Design, Mock-Up</span>
+                    </li>
+                </ul>
+                <button class="projects-btn" type="submit">LOAD MORE</button>
+            </div>
+        </section>
+
+        <section class="video">
+            <div class="wrap">
+                <div class="video-play"></div>
+                <h3 class="video-title raleway-medium">Waxom Video Presentation</h3>
+                <p class="video-text">
+                    Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur
+                    mutationem
+                    consuetudium.
+                </p>
+                <span class="video-score">3:26</span>
+            </div>
+        </section>
+
+        <section class="mobile">
+            <div class="wrap mobile-wrap">
+                <img src="img/mobile_img.png" alt="Фото" class="mobile-img">
+                <div class="mobile-information-text">
+                    <h3 class="mobile-title raleway-semi-bold">Excellent for Mobile Devices.</h3>
+                    <p class="mobile-text">
+                        Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                        aliquip
+                        ex
+                        ea commodo consequat.
+                        Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas.
+                        Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+                    </p>
+                    <ul class="mobile-list">
+                        <li class="mobile-item"><i class="fas fa-chevron-circle-right"></i>Nam liber
+                            tempor cum soluta
+                            nobis eleifend option;</li>
+                        <li class="mobile-item"><i class="fas fa-chevron-circle-right"></i>Option congue nihil imperdiet
+                            doming id quod mazim placerat facer;</li>
+                        <li class="mobile-item"><i class="fas fa-chevron-circle-right"></i>Eodem modo typi, qui nunc
+                            nobis videntur parum futurum;</li>
+                        <li class="mobile-item"><i class="fas fa-chevron-circle-right"></i>Investigationes
+                            demonstraverunt lectores</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="counters">
+            <div class="wrap">
+                <ul class="counters-list">
+                    <li class="counters-item counters-item-people">
+                        <span class="count">3587</span>
+                        <span class="counters-text">Satisfied Clients</span>
+                    </li>
+                    <li class="counters-item counters-item-cup">
+                        <span class="count">207</span>
+                        <span class="counters-text">Cups of coffee</span>
+                    </li>
+                    <li class="counters-item counters-item-message">
+                        <span class="count">2500</span>
+                        <span class="counters-text">Blog posts</span>
+                    </li>
+                    <li class="counters-item counters-item-heart">
+                        <span class="count">873</span>
+                        <span class="counters-text">Likes</span>
+                    </li>
+                    <li class="counters-item counters-item-bell">
+                        <span class="count">900</span>
+                        <span class="counters-text">We launched</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="recent">
+            <div class="wrap">
+                <div class="recent-information-trxt">
+                    <h3 class="recent-title raleway-semi-bold">Recent Posts.</h3>
+                    <p class="recent-text">
+                        Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                    </p>
+                </div>
+                <ul class="recent-list">
+                    <li class="recent-item">
+                        <img src="img/recent_img1.jpg" alt="" class="recent-item-img">
+                        <h4 class="recent-item-title raleway-medium">Lorem ipsum dolor sit amet</h4>
+                        <p class="recent-item-text">Claritas est etiam processus dynamicus, qui sequitur mutationem
+                            consuetudium.
+                        </p>
+                        <a href="" class="recent-item-more">Read More</a>
+                        <div class="recent-list-date">
+                            <span class="recent-item-date">30</span>
+                            <span class="recent-item-month">Sep.</span>
+                        </div>
+                    </li>
+                    <li class="recent-item">
+                        <img src="img/recent_img2.jpg" alt="" class="recent-item-img">
+                        <h4 class="recent-item-title raleway-medium">Lorem ipsum dolor sit amet</h4>
+                        <p class="recent-item-text">Claritas est etiam processus dynamicus, qui sequitur mutationem
+                            consuetudium.
+                        </p>
+                        <a href="" class="recent-item-more">Read More</a>
+                        <div class="recent-list-date">
+                            <span class="recent-item-date">30</span>
+                            <span class="recent-item-month">Sep.</span>
+                        </div>
+                    </li>
+                    <li class="recent-item">
+                        <img src="img/recent_img3.jpg" alt="" class="recent-item-img">
+                        <h4 class="recent-item-title raleway-medium">Lorem ipsum dolor sit amet</h4>
+                        <p class="recent-item-text">Claritas est etiam processus dynamicus, qui sequitur mutationem
+                            consuetudium.
+                        </p>
+                        <a href="" class="recent-item-more">Read More</a>
+                        <div class="recent-list-date">
+                            <span class="recent-item-date">30</span>
+                            <span class="recent-item-month">Sep.</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="recent-button">
+                    <button class="recent-btn-arrow"><i class="fas fa-chevron-circle-left"></i></button>
+                    <button class="recent-btn-arrow"><i class="fas fa-chevron-circle-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="partners">
+            <div class="wrap">
+                <ul class="partners-list">
+                    <li class="partners-item"><img src="img/partners_img1.svg" alt="photo" class="partners-pic"></li>
+                    <li class="partners-item"><img src="img/partners_img2.svg" alt="photo" class="partners-pic"></li>
+                    <li class="partners-item"><img src="img/partners_img3.svg" alt="photo" class="partners-pic"></li>
+                    <li class="partners-item"><img src="img/partners_img4.svg" alt="photo" class="partners-pic"></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div class="footer-information">
+                <div class="footer-waxom footer-information__item">
+                    <div class="footer-wamox-logo">
+                        <svg width="63" height="68" viewBox="0 0 63 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M36.7508 13.1039H26.2492L31.495 24.3376L36.7508 13.1039ZM24.9402 14.0451L19.6844 25.2788H30.186L24.9402 14.0451ZM43.3156 25.2788L38.0598 14.0451L32.814 25.2788H43.3156ZM32.814 27.149L38.0598 38.3827L43.3156 27.149H32.814ZM19.6844 27.149L24.9402 38.3827L30.186 27.149H19.6844ZM13.1196 39.3117H23.6213L18.3754 28.0903L13.1196 39.3117ZM49.8704 39.3117L44.6246 28.0903L39.3787 39.3117H49.8704ZM31.495 0L26.2492 11.2337H36.7508L31.495 0ZM44.6246 52.4156L49.8704 41.1942H39.3787L44.6246 52.4156ZM18.3754 52.4156L23.6213 41.1942H13.1196L18.3754 52.4156ZM6.56479 53.3568H17.0565L11.8106 42.1232L6.56479 53.3568ZM56.4352 53.3568L51.1894 42.1232L45.9335 53.3568H56.4352ZM45.9335 55.2271L51.1894 66.4607L56.4352 55.2271H45.9335ZM32.814 55.2271L38.0598 66.4607L43.3156 55.2271H32.814ZM11.8106 66.4607L17.0565 55.2271H6.56479L11.8106 66.4607ZM0 67.402H10.5017L5.24584 56.1683L0 67.402ZM26.2492 67.402H36.7508L31.495 56.1683L26.2492 67.402ZM39.3787 67.402H49.8704L44.6246 56.1683L39.3787 67.402ZM57.7542 56.1683L52.4983 67.402H63L57.7542 56.1683Z"
+                                fill="white" />
+                        </svg>
+                        <div class="footer-logo">Waxom</div>
+                    </div>
+                    <p class="foter-waxom-text footer-grey">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt
+                        ut laoreet dolore magna aliquam erat volutpat.
+                        Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.
+                    </p>
+                    <a href="" class="foter-waxom-a">Read more</a>
+                </div>
+                <div class="footer-posts footer-information__item">
+                    <h3 class="footer-title raleway-semi-bold">Recent Posts</h3>
+                    <a href="" class="footer-border footer-posts-active">
+                        <span class="footer-date">September 08, 2015</span>
+                        <p class="footer-posts-text footer-grey">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit
+                        </p>
+                    </a>
+                    <a href="" class="footer-border footer-posts-active">
+                        <span class="footer-date">September 08, 2015</span>
+                        <p class="footer-posts-text footer-grey">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit
+                        </p>
+                    </a>
+                    <div class="footer-posts-active">
+                        <span class="footer-date">September 08, 2015</span>
+                        <p class="footer-posts-text footer-grey">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit
+                        </p>
+                    </div>
+
+                </div>
+                <div class="footer-twitter footer-information__item">
+                    <h3 class="footer-title raleway-semi-bold">Our Twitter</h3>
+                    <div class="footer-border">
+                        <p class="footer-twitter-text footer-grey">
+                            <a href="" class="footer-link">@waxom</a> Cum soluta nobis eleifend option congue nihil
+                            imperdiet doming
+                        </p>
+                        <span class="footer-date">3 mins ago</span>
+                    </div>
+                    <div class="footer-border">
+                        <p class="footer-twitter-text footer-grey">
+                            Mirum est <a href="" class="footer-link">#envato</a> notare quam littera gothica, quam nunc
+                            putamus parum anteposuerit litterarum
+                        </p>
+                        <span class="footer-date">5 hours ago</span>
+                    </div>
+                    <p class="footer-twitter-text footer-grey">
+                        Soluta nobis option bit.ly/1Hniso7
+                    </p>
+                    <span class="footer-date">20 days ago</span>
+                </div>
+                <div class="footer-widget footer-information__item">
+                    <h3 class="footer-title raleway-semi-bold">Dribbble Widget</h3>
+                    <ul class="footer-widget-list">
+                        <li class="footer-widget-item"><img src="img/footer-widget-img1.jpg" alt=""></li>
+                        <li class="footer-widget-item"><img src="img/footer-widget-img2.jpg" alt=""></li>
+                        <li class="footer-widget-item"><img src="img/footer-widget-img3.jpg" alt=""></li>
+                        <li class="footer-widget-item"><img src="img/footer-widget-img4.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <div class="wrap footer-copy-flex">
+                <span class="footer-copyright footer-grey">Copyright © 2015 Waxom</span>
+                <ul class="footer-copy-list">
+                    <li class="footer-copy-item footer-grey">Privacy Policy</li>
+                    <li class="footer-copy-item footer-grey">FAQ</li>
+                    <li class="footer-copy-item footer-grey">Su pport</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
